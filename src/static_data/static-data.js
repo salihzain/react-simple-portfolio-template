@@ -1,6 +1,9 @@
 export const st_siteIdentity = {
     title: "Salih Zain",
-    profile_pic: "./profile_pic.JPG"
+    profile_pic: "./profile_pic.JPG",
+    firstLine: "I'm a Web Desinger &",
+    secondLine: "a CS student at the U of Rochester",
+    thirdLine: "Here's what you can do on my website:"
 }
 
 
@@ -30,9 +33,9 @@ export const contact = {
 
 export const navItems = {
     1: {
-        text: "Laura",
+        text: "On My Mind",
         link: "blog",
-        preview: "Read my latest Dear Laura blog posts"
+        preview: "Read my latest thoughts"
     },
     2: {
         text: "About",

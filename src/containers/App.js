@@ -19,7 +19,13 @@ class App extends Component {
       <main>
         <NavBar title={siteIdentity.title} navs={_.values(navs)} />,
         <Switch>
-          <Route exact path="/"><Home image={siteIdentity.profile_pic} navs={_.values(navs)} /></Route>
+          <Route exact path="/">
+            <Home image={siteIdentity.profile_pic}
+              navs={_.values(navs)}
+              firstLine={siteIdentity.firstLine}
+              secondLine={siteIdentity.secondLine}
+              thirdLine={siteIdentity.thirdLine} />
+          </Route>
           <Route path="/about" component={About} />
           <Route exact path="/blog" component={Posts} />
           <Route path="/blog/:id" component={Post} />

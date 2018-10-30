@@ -2,7 +2,6 @@ import React from 'react';
 
 const ContactForm = ({ action }) => {
     return (
-
         <div>
             <form action={action} method="POST">
                 <div className="form-group">

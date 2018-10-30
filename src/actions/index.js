@@ -1,6 +1,7 @@
 ////constants
-import { about, posts, work, cats, contact } from '../static_data/static-data';
-
+import { about, cats, contact } from '../static_data/static-data';
+import { posts } from '../static_data/blog';
+import { work } from '../static_data/work';
 
 export const FETCH_ABOUT = 'FETCH_ABOUT';
 export const FETCH_POSTS = 'FETCH_POSTS';

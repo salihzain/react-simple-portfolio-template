@@ -7,10 +7,10 @@ import { Switch, Route } from 'react-router-dom';
 import About from './About';
 import Post from './Post';
 import Posts from './Posts';
-import { fetchWork } from '../actions';
-import WorkItem from '../containers/WorkItem';
-import Work from '../containers/Work';
-store.dispatch(fetchWork());
+import WorkItem from './WorkItem';
+import Work from './Work';
+import Contact from './Contact';
+
 
 class App extends Component {
   render() {
@@ -25,6 +25,7 @@ class App extends Component {
           <Route path="/blog/:id" component={Post} />
           <Route exact path="/work" component={Work} />
           <Route path="/work/:id" component={WorkItem} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </main >
 

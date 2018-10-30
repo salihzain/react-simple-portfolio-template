@@ -4,6 +4,29 @@ export const st_siteIdentity = {
 }
 
 
+export const contact = {
+    faq: {
+        0: {
+            question: "Where do I live?",
+            answer: "I'm currently based in Rochester, NY"
+        },
+        1: {
+            question: "Do I use social media?",
+            answer: "Nope! I'm not on Facebook or Instagram. Can't handle the drama!"
+        }
+    },
+    faqButtons: {
+        0: {
+            text: "Linkedin Profile",
+            url: "https://linkedin.com/in/salihzain"
+        },
+        1: {
+            text: "GitHub",
+            url: "https://github.com/sigmazain"
+        },
+    }
+}
+
 
 export const navItems = {
     1: {

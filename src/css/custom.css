@@ -46,6 +46,10 @@ body {
   margin-bottom: 30px;
 }
 
+.card:hover{
+  background-color:#fafafa; 
+}
+
 .subtitle {
   background-color: #fafafa;
   padding: 10px 10px 10px 10px;

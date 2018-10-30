@@ -1,24 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import TitleBar from './TitleBar';
 
 const HomeNavItem = ({ navItem }) => {
-    return <Link to={navItem.link} className="list-group-item list-group-item-action">{navItem.text}</Link>
-
+    return <Link to={navItem.link} className="list-group-item list-group-item-action">{navItem.preview}</Link>
 }
 
 const Home = ({ navs }) => {
     return (
         <div className="container ">
-            <div className="row subtitle justify-content-center">
-                <h4>Hi! I'm Salih! Welcome to my website!</h4>
-            </div>
+            <TitleBar title="Hi I'm Salih! Welcome to my website!" />
             <div className="row">
                 <div className="col-md-4">
                 </div>
                 <div className="col-md-4 pushdown">
                     <img alt="profile" src={require('../static_data/profile_pic.JPG')} className="center img-rounded" />
                     <br />
-                    <h6 className="text-center">Here's what you can do:</h6>
+                    <p className="text-center">I'm a Web Designer & <br /> a CS student at U of Rochester</p>
+                    <h6 className="text-center">Here's what you can do on my website:</h6>
                     <div className="list-group pushdown">
                         {navs.map((homeNavItem, index) => (
                             <HomeNavItem navItem={homeNavItem} key={index} />
@@ -29,7 +28,6 @@ const Home = ({ navs }) => {
                 </div>
             </div>
         </div>
-
     )
 }
 

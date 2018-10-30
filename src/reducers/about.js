@@ -1,9 +1,13 @@
 import { FETCH_ABOUT } from '../actions';
 
+
+
+
 export default function about(state = {}, action) {
+
     switch (action.type) {
         case FETCH_ABOUT: {
-            return {
+            const about = {
                 quickFacts: action.payload.quickFacts,
                 skills: action.payload.skills,
                 work: action.payload.work,
@@ -13,9 +17,12 @@ export default function about(state = {}, action) {
                 links: action.payload.links
             }
 
+            return {
+                ...state,
+                about: about
+            }
         }
         default: {
-            console.log("default");
             return state;
         }
     }

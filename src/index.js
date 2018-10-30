@@ -8,6 +8,8 @@ import App from "./containers/App";
 import registerServiceWorker from "./registerServiceWorker";
 import { Provider } from 'react-redux';
 
+
+
 registerServiceWorker();
 
 const render = () => {
@@ -26,6 +28,9 @@ function fancylog() {
     console.log("%c rendered with", "background: purple; color:#fff");
 }
 
+
 render();
 
-fancylog(); 
+fancylog();
+
+

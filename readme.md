@@ -18,7 +18,7 @@ The action creator above currently returns a static object. However, if you conn
 
 ```javascript 
 export const fetchPosts = () => {
-	const myPosts = axios.get(https://fakeapi.com/api/fakeapi); 
+	const myPosts = axios.get('https://fakeapi.com/api/fakeapi'); 
     return {
         type: FETCH_POSTS,
         payload: myPosts

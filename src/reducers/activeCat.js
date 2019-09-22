@@ -6,6 +6,7 @@ export default function activeCat(state = "All", action) {
             const activeCat = action.payload
             return activeCat;
         }
+
         default: {
             return state
         }

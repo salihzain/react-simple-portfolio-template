@@ -16,9 +16,11 @@ const FAQ = ({ faq, faqButtons }) => {
     const faqButtonsArray = _.values(faqButtons);
     return (
         <div className="col-md-4 pushdown">
+
             {faqArray.map((q, index) => {
                 return <FaqItem q={q} key={index} />
             })}
+
             <div className="pushdown">
                 {
                     faqButtonsArray.map((button, index) => {
@@ -28,6 +30,7 @@ const FAQ = ({ faq, faqButtons }) => {
                     })
                 }
             </div>
+
         </div>
     )
 }

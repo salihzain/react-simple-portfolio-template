@@ -16,13 +16,16 @@ class WorkItem extends Component {
         if (this.props.work) {
             const group = this.props.work;
             const workItem = group[this.id];
+
             if (!workItem) {
                 return <div>post doesn't exist</div>
             }
+
             return (
                 <div className="container pushdown">
                     <div className="row pushdown">
                         <div className="col-md-2"></div>
+
                         <div className="col-md-8">
                             <h3>{workItem.title}</h3>
                             <p className="body-text">
@@ -30,11 +33,13 @@ class WorkItem extends Component {
                                 {renderHTML(workItem.body)}
                             </p>
                         </div>
+
                         <div className="col-md-2"></div>
                     </div>
                 </div>
             )
         }
+
         return <div></div>
     }
 }
@@ -42,6 +47,5 @@ class WorkItem extends Component {
 function mapStateToProps({ work }) {
     return work;
 }
-
 
 export default withRouter(connect(mapStateToProps, { fetchWork })(WorkItem));

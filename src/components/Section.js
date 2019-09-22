@@ -15,18 +15,16 @@ const ListItem = ({ itemTitle, itemBody, itemDate }) => {
 
 }
 
-
 const Section = ({ title, listItems }) => {
-
     return (
         <div className="container pushdown">
             <TitleBar title={title} />
             <div className="row ">
                 <div className="col-md-2">
                 </div>
+
                 <div className="col-md-8 pushdown">
                     <div className="list-group pushdown">
-
                         {listItems.map((item, index) => {
                             return (
                                 <ListItem itemTitle={item.title} itemBody={item.body} itemDate={item.period} key={index} />
@@ -35,6 +33,7 @@ const Section = ({ title, listItems }) => {
                         })}
                     </div>
                 </div>
+
                 <div className="col-md-2"></div>
             </div>
         </div>

@@ -11,13 +11,13 @@ import WorkItem from './WorkItem';
 import Work from './Work';
 import Contact from './Contact';
 
-
 class App extends Component {
   render() {
     const { siteIdentity, navs } = store.getState();
     return (
       <main>
         <NavBar title={siteIdentity.title} navs={_.values(navs)} />,
+
         <Switch>
           <Route exact path="/">
             <Home image={siteIdentity.profile_pic}
@@ -26,6 +26,7 @@ class App extends Component {
               secondLine={siteIdentity.secondLine}
               thirdLine={siteIdentity.thirdLine} />
           </Route>
+
           <Route path="/about" component={About} />
           <Route exact path="/blog" component={Posts} />
           <Route path="/blog/:id" component={Post} />
@@ -34,12 +35,8 @@ class App extends Component {
           <Route path="/contact" component={Contact} />
         </Switch>
       </main >
-
     );
   }
 }
-
-
-
 
 export default App; 

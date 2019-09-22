@@ -8,6 +8,7 @@ export default function contact(state = {}, action) {
                 contact: action.payload
             }
         }
+
         default: {
             return state;
         }

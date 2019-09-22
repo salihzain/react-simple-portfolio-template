@@ -13,10 +13,8 @@ class About extends Component {
         this.props.fetchItems();
     }
 
-
     render() {
         if (this.props.about) {
-            console.log("lodad", this.props.about);
             return (
                 <div>
                     <Section title="quick facts about me" listItems={_.values(this.props.about.quickFacts)} />
@@ -31,10 +29,6 @@ class About extends Component {
         }
 
         return <div> empty </div>
-
-
-
-
     }
 }
 

@@ -17,7 +17,6 @@ const PortfolioPreviewItem = ({ thumbImg, link }) => {
     )
 }
 
-
 const PortfolioPreview = ({ work, activeCat }) => {
     const workArray = _.values(work);
     if (activeCat === 'All') {
@@ -31,6 +30,7 @@ const PortfolioPreview = ({ work, activeCat }) => {
             </div>
         )
     }
+
     return (<div className="row">
         {
             workArray.filter(workItem => workItem.category === activeCat).map((workItem, index) => {

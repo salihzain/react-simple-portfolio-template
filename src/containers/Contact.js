@@ -12,7 +12,6 @@ class Contact extends Component {
     }
 
     render() {
-
         if (this.props.contact) {
             const contact = this.props.contact;
             return (
@@ -21,9 +20,11 @@ class Contact extends Component {
                     <div className="row ">
                         <div className="col-md-2">
                         </div>
+
                         <div className="col-md-4 pushdown">
                             <ContactForm action="https://formspree.io/salihzain35@gmail.com" />
                         </div>
+
                         <FAQ faq={contact.faq} faqButtons={contact.faqButtons} />
                         <div className="col-md-2"></div>
                     </div>
@@ -32,12 +33,7 @@ class Contact extends Component {
         }
         return <div></div>
     }
-
-
-
-
 }
-
 
 function mapStateToProps({ contact }) {
     return contact;

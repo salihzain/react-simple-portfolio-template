@@ -8,6 +8,7 @@ export default function work(state = {}, action) {
                 work: action.payload
             }
         }
+
         default: {
             return state;
         }

@@ -4,7 +4,6 @@ import { withRouter } from 'react-router-dom';
 import { fetchCats, setActiveCat } from '../actions';
 import _ from 'lodash';
 
-
 class Filter extends Component {
     componentWillMount() {
         this.props.fetchCats();
@@ -16,6 +15,7 @@ class Filter extends Component {
             return (
                 <div className="row justify-content-center pushdown">
                     <div className="col-sm-2"></div>
+
                     <div className="col-sm-8">
                         <div className="input-group pushdown">
                             <select className="custom-select" id="inputGroupSelect04" value={this.value} onChange={this.props.setActiveCat}>
@@ -25,18 +25,15 @@ class Filter extends Component {
                             </select>
                         </div>
                     </div>
-                    <div className="col-sm-2"></div>
 
+                    <div className="col-sm-2"></div>
                 </div>
             )
         }
-        return <div>cats not fetched</div>;
 
+        return <div>cats not fetched</div>;
     }
 }
-
-
-
 
 function mapStateToProps(state) {
     const data = {
@@ -47,5 +44,3 @@ function mapStateToProps(state) {
 }
 
 export default withRouter(connect(mapStateToProps, { fetchCats, setActiveCat })(Filter))
-
-

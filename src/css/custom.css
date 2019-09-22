@@ -6,9 +6,11 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   margin-bottom: 70px; /* Margin bottom by footer height */
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -92,6 +94,7 @@ body {
   border-radius: 1rem;
   margin: 5px 5px 5px 5px;
 }
+
 .center {
   display: block;
   margin-left: auto;
@@ -104,7 +107,6 @@ body {
   height: 200px;
    width: auto
 }
-
 
 .faded {
   color: #636e72

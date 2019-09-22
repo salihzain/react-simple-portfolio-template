@@ -13,16 +13,17 @@ const Skills = ({ title, skills }) => {
             <div className="row pushdown">
                 <div className="col-md-2">
                 </div>
+
                 <div className="col-md-8">
                     {skills.map((skill, index) => {
                         return (<Skill skill={skill} key={index} />)
                     })}
                 </div>
+
                 <div className="col-md-2"></div>
             </div>
         </div>
     )
 }
-
 
 export default Skills; 

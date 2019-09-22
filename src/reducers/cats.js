@@ -8,6 +8,7 @@ export default function cats(state = {}, action) {
                 cats: action.payload
             }
         }
+
         default: {
             return state;
         }

@@ -1,10 +1,6 @@
 import { FETCH_ABOUT } from '../actions';
 
-
-
-
 export default function about(state = {}, action) {
-
     switch (action.type) {
         case FETCH_ABOUT: {
             const about = {
@@ -26,5 +22,4 @@ export default function about(state = {}, action) {
             return state;
         }
     }
-
 }

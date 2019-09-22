@@ -9,6 +9,7 @@ const GridItem = ({ thumbImg, title, link }) => {
                     <a href={link}>
                         <img className="card-img-top port-thumb" src={thumbImg} alt={title} />
                     </a>
+
                     <div className="middle">
                         <h6>{title}</h6>
                     </div>
@@ -22,9 +23,11 @@ const MediumImageGrid = ({ title, GridItems }) => {
     return (
         <div className="container pushdown">
             <TitleBar title={title} />
+
             <div className="row">
                 <div className="col-md-2">
                 </div>
+
                 <div className="col-md-8 pushdown">
                     <div className="row">
                         {GridItems.map((gridItem, index) => {
@@ -32,6 +35,7 @@ const MediumImageGrid = ({ title, GridItems }) => {
                         })}
                     </div>
                 </div>
+
                 <div className="col-md-2"></div>
             </div>
 

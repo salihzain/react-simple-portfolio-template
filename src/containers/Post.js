@@ -16,6 +16,7 @@ class Post extends Component {
             if (!post) {
                 return <div>post doesn't exist</div>
             }
+
             return (
                 <div className="container pushdown">
                     <div className="row pushdown">
@@ -32,6 +33,7 @@ class Post extends Component {
                 </div>
             )
         }
+
         return <div></div>
     }
 }
@@ -39,6 +41,5 @@ class Post extends Component {
 function mapStateToProps({ posts }) {
     return posts;
 }
-
 
 export default withRouter(connect(mapStateToProps, { fetchPosts })(Post));

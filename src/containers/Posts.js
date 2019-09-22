@@ -6,10 +6,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
-
 const PostPreview = ({ post }) => {
     return (
-
         <div className="col-sm-4 card-custom">
             <div className="card">
                 <div className="card-body">
@@ -19,13 +17,10 @@ const PostPreview = ({ post }) => {
                 </div>
             </div>
         </div>
-
-
     )
 }
 
 class Posts extends Component {
-
     componentDidMount() {
         this.props.fetchPosts();
     }
@@ -44,7 +39,6 @@ class Posts extends Component {
             )
         }
         return <div></div>
-
     }
 }
 

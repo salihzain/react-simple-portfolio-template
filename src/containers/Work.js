@@ -15,17 +15,17 @@ class Work extends Component {
         if (this.props.work) {
             const work = this.props.work;
             const activeCat = this.props.activeCat;
+
             return (<div className="container pushdown">
                 <TitleBar title="Portfolio" />
                 <Filter />
                 <PortfolioPreview work={work} activeCat={activeCat} />
             </div>)
         }
-        return <div></div>
 
+        return <div></div>
     }
 }
-
 
 function mapStateToProps({ work, activeCat }) {
     return {

@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const Button = ({ text, url }) => {
     function goToPage() {
         window.open(url, false);

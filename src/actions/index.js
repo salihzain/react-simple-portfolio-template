@@ -1,4 +1,4 @@
-////constants
+// constants
 import { about, cats, contact } from '../static_data/static-data';
 import { posts } from '../static_data/blog';
 import { work } from '../static_data/work';
@@ -16,7 +16,6 @@ export const fetchItems = () => {
         payload: about
     })
 }
-
 
 export const fetchPosts = () => {
     return {

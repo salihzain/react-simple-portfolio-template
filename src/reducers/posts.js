@@ -7,6 +7,7 @@ export default function posts(state = {}, action) {
                 posts: action.payload
             }
         }
+
         default: {
             return state;
         }
